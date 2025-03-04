@@ -1,14 +1,14 @@
 
 // Données des recommandations
 const recommendationsData = {
-  plages: {
+  beaches: {
     images: [
       "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1468413253725-0d5181091126?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ],
     descriptions: [
-      "Plage de Palawan, Philippines",
-      "Plage de Phuket, Thaïlande"
+      "beach de Palawan, Philippines",
+      "beach de Phuket, Thaïlande"
     ]
   },
   temples: {
@@ -21,7 +21,7 @@ const recommendationsData = {
       "Borobudur, Indonésie"
     ]
   },
-  pays: {
+  country: {
     images: [
       "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
       "https://images.unsplash.com/photo-1532375810709-75b1da00537c"
@@ -39,9 +39,9 @@ function loadRecommendations(searchTerm) {
   container.innerHTML = '';
 
   let category;
-  if (searchTerm.includes("plage")) category = "plages";
+  if (searchTerm.includes("beach")) category = "beaches";
   else if (searchTerm.includes("temple")) category = "temples";
-  else if (searchTerm.includes("pays")) category = "pays";
+  else if (searchTerm.includes("country")) category = "country";
   else return;
 
   const data = recommendationsData[category];

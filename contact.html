@@ -2,25 +2,35 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>VoyageAsia - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoyageAsia - Nous contacter</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <a href="index.html" class="logo">VoyageAsia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos de nous</a></li>
+        <li><a href="contact.html">Nous contacter</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher...">
+        <button id="search-button">🔍</button>
+        <button id="clear-button">❌</button>
+      </div>
+    </div>
   </nav>
 
-  <form>
-    <h1>Contactez-nous</h1>
-    
-    <input type="text" placeholder="Votre nom" required>
-    <input type="email" placeholder="Votre email" required>
-    <textarea rows="5" placeholder="Votre message..." required></textarea>
-    <button type="submit">Envoyer le message</button>
-  </form>
+  <section class="contact-section">
+    <h1>Nous contacter</h1>
+    <form id="contact-form">
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
 </body>
 </html>

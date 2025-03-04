@@ -2,36 +2,43 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>VoyageAsia - À propos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoyageAsia - À propos de nous</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <a href="index.html" class="logo">VoyageAsia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos de nous</a></li>
+        <li><a href="contact.html">Nous contacter</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher...">
+        <button id="search-button">🔍</button>
+        <button id="clear-button">❌</button>
+      </div>
+    </div>
   </nav>
 
-  <div class="about-section">
+  <section class="about-section">
     <h1>À propos de nous</h1>
-    
-    <section>
-      <h2>Notre mission</h2>
-      <p>Depuis 2010, nous aidons les voyageurs à découvrir les trésors de l'Asie...</p>
-    </section>
-
-    <section>
-      <h2>Notre équipe</h2>
-      <p>Des experts locaux dans chaque pays asiatique...</p>
-    </section>
-
-    <section>
-      <h2>Nos valeurs</h2>
-      <p>Voyage responsable, authenticité des expériences...</p>
-    </section>
-  </div>
+    <p>VoyageAsia est une agence de voyage spécialisée dans les destinations asiatiques. Notre mission est de vous offrir des expériences uniques et mémorables.</p>
+    <h2>Notre équipe</h2>
+    <div class="team-members">
+      <div class="member">
+        <img src="https://via.placeholder.com/150" alt="Membre 1">
+        <h3>Alice Dupont</h3>
+        <p>Directrice des opérations</p>
+      </div>
+      <div class="member">
+        <img src="https://via.placeholder.com/150" alt="Membre 2">
+        <h3>Jean Martin</h3>
+        <p>Expert en voyages</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

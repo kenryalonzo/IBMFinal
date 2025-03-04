@@ -2,54 +2,39 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VoyageAsia - Accueil</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Barre de navigation -->
   <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="about.html">À propos</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <a href="index.html" class="logo">VoyageAsia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos de nous</a></li>
+        <li><a href="contact.html">Nous contacter</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher...">
+        <button id="search-button">🔍</button>
+        <button id="clear-button">❌</button>
+      </div>
+    </div>
   </nav>
 
+  <!-- Section d'introduction -->
   <section class="hero">
-    <h1>Découvrez l'Asie avec nous</h1>
-    <p>Trouvez les meilleures destinations pour votre prochain voyage</p>
+    <h1>Bienvenue sur VoyageAsia</h1>
+    <p>Découvrez les meilleures destinations en Asie avec nos recommandations personnalisées.</p>
   </section>
 
+  <!-- Section de recommandations dynamiques -->
   <div class="recommendations" id="recommendations-container">
-    <!-- Le contenu sera généré par JavaScript -->
+    <!-- Contenu généré par JavaScript -->
   </div>
 
-  <div class="recommendations">
-    <!-- Plages -->
-    <div class="recommendation">
-      <h2>Nos plages préférées</h2>
-      <div class="recommendation-images">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Plage de Palawan">
-        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a" alt="Plage de Thaïlande">
-      </div>
-    </div>
-
-    <!-- Temples -->
-    <div class="recommendation">
-      <h2>Temples incontournables</h2>
-      <div class="recommendation-images">
-        <img src="https://unsplash.com/fr/photos/un-grand-batiment-avec-beaucoup-darbres-devant-lui-8cJAnazMShg" alt="Angkor Wat">
-        <img src="https://unsplash.com/fr/photos/red-boat-near-mosque-painting--1h_NN3nqzI" alt="Borobudur">
-      </div>
-    </div>
-
-    <!-- Pays -->
-    <div class="recommendation">
-      <h2>Par pays</h2>
-      <div class="recommendation-images">
-        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf" alt="Japon">
-        <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c" alt="Vietnam">
-      </div>
-    </div>
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
